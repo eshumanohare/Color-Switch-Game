@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<!-- Contains resume game window with all saved game list -->
+
+<AnchorPane prefHeight="900.0" prefWidth="800.0" styleClass="background" stylesheets="@../CSS/styles.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label layoutX="284.0" layoutY="51.0" prefHeight="111.0" prefWidth="263.0" style="-fx-font-size: 36px; -fx-font-weight: bold;" text="SAVED GAMES" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Consolas" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="162.0" fitWidth="193.0" layoutX="7.0" onMouseClicked="#goBack" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/goBack.png" />
+         </image>
+      </ImageView>
+      <JFXListView fx:id="listview" layoutX="65.0" layoutY="162.0" prefHeight="690.0" prefWidth="671.0" />
+   </children>
+</AnchorPane>

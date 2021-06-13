@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.Rectangle?>
+
+<!-- Main Game Window with start resume and exit buttons -->
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="800.0" styleClass="background" stylesheets="@../CSS/styles.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <ImageView fitHeight="176.0" fitWidth="372.0" layoutX="224.0" layoutY="14.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/MainLogo.png" />
+         </image>
+      </ImageView>
+      <Circle fill="#891fff" layoutX="400.0" layoutY="338.0" radius="94.0" stroke="#868686" strokeType="INSIDE" strokeWidth="0.0" />
+      <Polygon fx:id="startGame" fill="#891fff" layoutX="381.0" layoutY="337.0" onMouseClicked="#startGame" onMouseEntered="#onMouseEntered" points="-41.0, -85.0, -41.0, 86.0, 108.0, 1.0" stroke="#292929" strokeType="OUTSIDE" strokeWidth="20.0" style="-fx-cursor: pointer;" styleClass="startGame" />
+      <Circle fill="#891fff" layoutX="183.0" layoutY="631.0" radius="101.0" stroke="#868686" strokeType="INSIDE" strokeWidth="0.0" />
+      <Polygon fx:id="resumeGame" fill="#b9b6bc" layoutX="130.0" layoutY="613.0" onMouseClicked="#resumeGame" onMouseEntered="#onMouseEntered" points="-3.0, -69.0, -3.0, 104.0, 131.0, 18.0" stroke="#292929" strokeType="OUTSIDE" strokeWidth="20.0" />
+      <Circle fx:id="exitGame" fill="#891fff" layoutX="645.0" layoutY="630.0" onMouseClicked="#exitGame" onMouseEntered="#onMouseEntered" radius="101.0" stroke="#868686" strokeType="INSIDE" strokeWidth="0.0" />
+      <Rectangle fx:id="strip2" arcHeight="5.0" arcWidth="5.0" fill="#292929" height="241.0" layoutX="632.0" layoutY="511.0" onMouseClicked="#exitGame" onMouseEntered="#onMouseEntered" rotate="45.0" stroke="#292929" strokeType="INSIDE" strokeWidth="0.0" width="27.0" />
+      <Rectangle fx:id="strip1" arcHeight="5.0" arcWidth="5.0" fill="#292929" height="247.0" layoutX="632.0" layoutY="508.0" onMouseClicked="#exitGame" onMouseEntered="#onMouseEntered" rotate="-45.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="26.0" />
+   </children>
+</AnchorPane>

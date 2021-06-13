@@ -1,0 +1,19 @@
+.background{
+    -fx-background-color: #292929;
+}
+.text{
+    -fx-font-weight: bold;
+    -fx-font-size: 42px;
+    -fx-font-family: 'Blissful Thinking', serif;
+    src: url('http://fonts.cdnfonts.com/css/blissful-thinking');
+}
+
+.button{
+    -fx-font-weight: bold;
+    -fx-background-color: #8a2be2; 
+}
+
+.startGameButton{
+    
+}
+

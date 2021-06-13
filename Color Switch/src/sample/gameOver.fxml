@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:id="exitLayout" prefHeight="900.0" prefWidth="800.0" styleClass="background" stylesheets="@../CSS/styles.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <ImageView fitHeight="189.0" fitWidth="189.0" layoutX="306.0" layoutY="629.0" onMouseClicked="#exitGamePlay" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/exit.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="continuePoints" fitHeight="195.0" fitWidth="174.0" layoutX="126.0" layoutY="110.0" onMouseClicked="#resumePlayAfterBump" visible="false">
+         <image>
+            <Image url="@../Images/resume.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="continueLabel" layoutX="400.0" layoutY="145.0" prefHeight="125.0" prefWidth="388.0" text="Label" />
+      <ImageView fitHeight="174.0" fitWidth="200.0" layoutX="324.0" layoutY="363.0" onMouseClicked="#restartGame" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/restart.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
